@@ -5,7 +5,7 @@ const path = require('path');
 const mongoose = require('mongoose');
 
 //connecting to DB
-mongoose.connect('mongodb+srv://user1:mongo123@database1.raqwr.mongodb.net/DataBase1?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://user1:mongo123@database1.raqwr.mongodb.net/DataBase1?retryWrites=true&w=majority', { useNewUrlParser: true })
     .then(db => console.log('DB Connected'))
     .catch(err => console.log(err));
 
